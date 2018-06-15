@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="false"
+         convertWarningsToExceptions="false"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="true"
+>
+
+    <testsuites>
+        <testsuite name="FX API Client Test Suite">
+            <directory>tests/PayU/FX/</directory>
+        </testsuite>
+    </testsuites>
+
+</phpunit>

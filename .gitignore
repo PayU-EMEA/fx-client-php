@@ -1,0 +1,8 @@
+# Jetbrains IntelliJ / PhpStorm
+/.idea
+
+# Ignore the /vendor/ directory for people using composer
+/vendor/
+
+composer.lock
+composer.phar
