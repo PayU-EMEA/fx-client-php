@@ -1,6 +1,6 @@
 {
   "description": "FX API PHP Client",
-  "name": "PayU/fx-client-php",
+  "name": "payu/fx-client-php",
   "license": "Apache-2.0",
   "type": "library",
   "authors": [
