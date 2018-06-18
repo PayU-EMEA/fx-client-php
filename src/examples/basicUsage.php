@@ -28,7 +28,11 @@ $platform = Platform::RO();
 $client = new Client($credentials, $platform);
 
 try {
-    $client->getAllFxRates('EUR');
+    $rates = $client->getAllFxRates('EUR');
+
+    foreach ($rates as $rate) {
+        echo '1 EUR = ' . $rate->getRateValue() . '  ' . $rate->getRateCurrency() . ' (until ' . $rate->getExpirationDate() . ')';
+    }
 } catch (ClientException $e) {
     echo 'Something went wrong:' . $e->getMessage();
 }

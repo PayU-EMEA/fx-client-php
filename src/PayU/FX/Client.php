@@ -70,18 +70,8 @@ class Client
     ) {
         $this->credentials = $credentials;
         $this->platform = $platform;
-
-        if ($signatureGenerator === null) {
-            $this->signatureGenerator = new SignatureGenerator();
-        } else {
-            $this->signatureGenerator = $signatureGenerator;
-        }
-
-        if ($httpClient === null) {
-            $this->httpClient = new GuzzleClient();
-        } else {
-            $this->httpClient = $httpClient;
-        }
+        $this->signatureGenerator = $signatureGenerator === null ? new SignatureGenerator() : $signatureGenerator;
+        $this->httpClient = $httpClient === null ? new GuzzleClient() : $httpClient;
     }
 
     /**
