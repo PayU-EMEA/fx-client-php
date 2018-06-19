@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/PayU/fx-client-php.svg?branch=master)](https://travis-ci.org/PayU/fx-client-php)
+
 # PHP client for FX API 
 
 ## Introduction
