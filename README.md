@@ -81,7 +81,7 @@ try {
 }
 ```
 
-More example code can be found in `src/examples` dir.
+More example code can be found in `examples` dir.
 
 ## License
 
